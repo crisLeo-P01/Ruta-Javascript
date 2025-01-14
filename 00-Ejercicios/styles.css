@@ -1,16 +1,16 @@
 :root {
   color-scheme: light dark;
 }
-.cuadrado {
-  width: 60px;
-  height: 60px;
-  border: 1px solid #333;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
 }
 
-.bg-red {
-  background-color: red;
-}
-
-.bg-blue {
-  background-color: blue;
+img {
+  width: 100vw;
+  height: 100dvh;
+  object-fit: cover;
 }

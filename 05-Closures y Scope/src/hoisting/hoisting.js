@@ -17,5 +17,19 @@ de la función hacia arriba del llamado y se ejecuta sin problemas */
 saludar();
 
 function saludar() {
-  console.log('hola, buenas tardes');
+    console.log('hola, buenas tardes');
 }
+class Autos {
+    constructor(marca, modelo, precio) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.precio = precio;
+    }
+
+    mostrarInfo() {
+        console.log(`Marca: ${this.marca}, Modelo: ${this.modelo}, Precio: ${this.precio}`);
+    }
+}
+
+let peugeot = new Autos('Peugeot', 206, 25000);
+peugeot.mostrarInfo();

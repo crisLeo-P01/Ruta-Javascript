@@ -1,11 +1,11 @@
-function requiredParam( param ) {
-  throw new Error( param + ' es obligatorio' )
+function requiredParam(param) {
+  throw new Error(param + ' es obligatorio')
 }
 
 function createStudent({
-  name = requiredParam( 'name' ),
+  name = requiredParam('name'),
   age,
-  email = requiredParam( 'email' ),
+  email = requiredParam('email'),
   twitter,
   instagram,
   pinterest,
@@ -29,22 +29,22 @@ function createStudent({
     get name() {
       return private["_name"];
     },
-    set name( newName ) {
-      if( newName.lenght != 0 ) {
+    set name(newName) {
+      if (newName.lenght != 0) {
         private["_name"] = newName;
       } else {
-        console.warn( 'Tu nombre debe tener al menos 1(uno) caracter' )
+        console.warn('Tu nombre debe tener al menos 1(uno) caracter')
       }
     },
   };
-  
+
   return public;
 }
 
 const juan = createStudent({
   name: 'Juan',
   email: 'juandc@gmail.com',
-  twitter: '@juanDC' 
+  twitter: '@juanDC'
 });
 
 const cristian = createStudent({
